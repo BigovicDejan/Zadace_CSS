@@ -14,7 +14,6 @@
     display: flex;
     flex-flow: row nowrap;
     background-color: rgb(250, 211, 250);
-    height: 100px;
     flex: 1 100%;
     justify-content: center;
     align-items: center; 
@@ -24,7 +23,6 @@
     display: flex;
     flex-flow: row wrap;
     background-color: rgb(235, 173, 185);
-    height: 800px;
     padding: 20px;
     gap: 5px;
     justify-content: space-between;
