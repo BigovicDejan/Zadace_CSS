@@ -1,0 +1,86 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.glavni{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 100px;
+}
+
+.glavni div{
+    background: orange;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 50px;
+    border: 3px solid black;
+}
+
+.pulsate {
+        animation: animacija1 1s infinite;
+}
+
+@keyframes animacija1{
+    0%{ transform: scale(100%);
+        background:orange}
+    50%{transform: scale(125%);
+        background:red;}
+    100%{transform: scale(100%);
+        background:orange}
+}
+
+.jo-jo{
+        animation: animacija2 2s linear infinite;
+}
+
+@keyframes animacija2 {
+    0%{ transform: scale(100%) translate(0,0) rotate(0deg);}
+    50%{transform: scale(50%) translate(0,400px) rotate(360deg);}
+    100%{transform: scale(100%) translate(0,0) rotate(0deg);}   
+}
+
+.rotate-shape-change{
+    animation: animacija3 5s infinite;
+}
+
+@keyframes animacija3 {
+    0%{transform: rotate(0deg); border-radius:100px ;}
+    50%{transform: rotate(180deg); border-radius:0px ;}
+    100%{transform: rotate(360deg); border-radius:100px ;}
+}
+
+.vibrate{
+    animation: animacija4 0.5s linear infinite;
+}
+
+@keyframes animacija4 {
+    0%{transform: translate(0, 0); }
+    50%{transform: translate(0, 50px); }
+    100%{transform: translate(0, 0); }    
+}
+
+.vertical-rotate{
+    animation: animacija5 4s ease-out infinite;
+}
+
+@keyframes animacija5 {
+    0%{transform: translate(0,0) rotate(0deg); background: orange; }
+    25%{transform: translate(0,400px) rotate(0deg); background: orange; }
+    50%{transform: translate(0,400px) rotate(360deg); background: red; }
+    75%{transform: translate(0,400px) rotate(0deg); background: orange; }
+    100%{transform: translate(0,0) rotate(0deg); background: orange; }
+}
+
+.pulsate-hover:hover{
+    animation: animacija6 1s infinite;
+}
+
+@keyframes animacija6 {
+    0%{ transform: scale(100%);}
+    50%{transform: scale(150%);}
+    100%{transform: scale(100%);}
+}
